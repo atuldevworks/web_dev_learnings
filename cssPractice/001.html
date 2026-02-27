@@ -1,0 +1,162 @@
+<!--
+01 .bootstrap https://getbootstrap.com
+
+02 .materilze css https://materializecss.com
+
+
+03 .tailwindcss https://tailwindcss.com
+04. shacdn. ui.shacdn.com
+
+05. acernity https://www.ui.acernity.com
+
+
+
+
+-->
+
+<!--login page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+      body{
+        margin:0;
+        padding:0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header{
+        margin-top: 0;
+        padding-top: 0;
+        background-color: tomato;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0px;;
+        
+      }
+      header h1{
+        color:white;
+        margin-right: 10px;
+        width: 50px;
+        font-size: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+       nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        gap: 10px;
+
+      }
+      nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        width: 50%;
+       
+      }
+      nav ul li{
+        color:white;
+        margin-left: 10px;
+        ;
+      }
+      nav ul li:hover{
+        color:black;
+        margin-left: 10px;
+        cursor: pointer;
+        
+      }
+  
+
+      main{
+        margin-top: 0;
+        background-color: rgba(214, 240, 214, 0.372);
+        height: 90vh;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+     .loginCard{
+       
+       
+        height: 40vh;
+        margin-left: 30px;
+        margin-right: 30px;padding-top: 50px;
+      
+      
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        
+        background-color: rgba(237, 221, 193, 0.382);
+        border-radius: 10px;
+        border: 1px solid rgba(24, 22, 20, 0.382);
+
+       
+        
+
+      }
+
+      .loginCard h2{
+        color:rgb(74, 152, 229);
+
+      }
+
+      .loginCard form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .loginCard form button{
+        width:150px;
+        background-color: blue;;
+        color:white
+      }
+
+
+
+    </style>
+    <script>
+      function getClick() {
+               alert("Login button clicked!"+"\n user name :"+document.getElementById("userName").value+"\n"+"user passwd :"+document.getElementById("password").value+"\n","login info");
+        
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>simple project</h1>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>others</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="loginCard" >
+            <h2>Login</h2>
+            <form  method="post" >
+                <input type="text" name="userName" id="userName" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="submit" onclick="getClick()">Login</button>
+            </form>
+        </section>
+    </main>
+    
+    
+</body>
+</html>

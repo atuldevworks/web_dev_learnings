@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid demo</title>
+
+    <style>
+        .item {
+            border: 1px solid green;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-weight: bolder;
+            color: white;
+            position: relative;
+
+
+
+        }
+        body .item figure  :hover{
+            rotate: 90deg ;
+            position: absolute;
+            transition: rotate 0.90s ease-in-out;
+
+        }
+
+        .color01 {
+            background-color: tomato;
+        }
+
+        .color02 {
+            background-color: green;
+
+        }
+
+        .color03 {
+            background-color: rgba(8, 54, 54, 0.607);
+        }
+
+        .color04 {
+            background-color: blueviolet;
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        .mainCon {
+            display: grid;
+            grid-template-columns: repeat(2,5fr);
+            grid-template-rows: 500px 500px 500px 500px;
+            row-gap: 5px;
+            column-gap: 5px;
+        }
+        .item figure{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item figure img {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top:0;
+            height: 99%;
+
+        }
+
+        .item figure figcaption{
+            font-size: 8px;
+            width: 100%;
+            bottom:0;
+            left:0;
+            text-align: left;
+           position: absolute;
+           background-color: white;
+           color:black
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mainCon">
+        <div class="item color01">
+            <figure>
+                <img src="https://picsum.photos/1000/1000" alt="">
+                <figcaption>this is random image</figcaption>
+            </figure>
+        </div>
+        <div class="item color02"><figure>
+                <img src="https://picsum.photos/1000/1000" alt="">
+                <figcaption>this is random image</figcaption>
+            </figure></div>
+        <div class="item color03"><figure>
+                <img src="https://picsum.photos/1000/1000" alt="">
+                <figcaption>this is random image</figcaption>
+            </figure></div>
+        <div class="item color04"><figure>
+                <img src="https://picsum.photos/1000/1000" alt="">
+                <figcaption>this is random image</figcaption>
+            </figure></div>
+        <div class="item color04"><figure>
+                <img src="https://picsum.photos/1000/1000" alt="">
+                <figcaption>this is random image</figcaption>
+            </figure></div>
+
+    </div>
+</body>
+
+</html>
